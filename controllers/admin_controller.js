@@ -131,7 +131,7 @@ const resetPassword = (req, res) => {
     service: "gmail",
     auth: {
       user: "trigonx1212@gmail.com",
-      pass: "zeit wcpu goer gabz",
+      pass: process.env.APP_PASS,
     },
   });
 

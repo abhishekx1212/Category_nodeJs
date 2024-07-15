@@ -59,7 +59,7 @@
                             style="font-size: 20px; border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );"
                             class="form-control border border-0" required>
                         <select name="catId" id="catId" class="form-control my-2 border border-0"
-                            style="font-size: 20px; border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );">
+                            style="font-size: 20px; border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );" required>
                             <option value="" disabled selected>--select category--</option>
                             <% cat.map((val=>{ %>
                                 <option value="<%= val.id %>">
@@ -68,11 +68,11 @@
                                 <% })) %>
                         </select>
                         <select name="SubCatId" id="SubCatId" class="form-control mb-2 border border-0"
-                            style="font-size: 20px;border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );">
+                            style="font-size: 20px;border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );" required>
                             <option value="" disabled selected>--Select subCategory--</option>
                         </select>
                         <select name="extraCatId" id="extraCatId" class="mb-2 form-control border border-0"
-                            style="font-size: 20px; border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );">
+                            style="font-size: 20px; border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );" required>
                             <option value="" disabled selected>--Select extraCategory--</option>
                         </select>
                         <input type="submit" name="" id="type" value="ADD" style="font-size: 20px;"

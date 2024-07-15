@@ -7,9 +7,11 @@ const mongoose = require('mongoose');
 //         console.log('database connected..');
 //     }
 // })
+require('dotenv').config()
+const secretKey = process.env.SECRET_KEY;
 
 const db = async()=>{
-    await mongoose.connect("mongodb+srv://trigonx1212:12345@cluster0.hmmr1zy.mongodb.net/adminPanel");
+    await mongoose.connect(process.env.DATABASE_URL);
     console.log('database connected!!');
 }
 
